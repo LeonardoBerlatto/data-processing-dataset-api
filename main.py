@@ -6,7 +6,7 @@ from routes import sales_router
 app = FastAPI(
     openapi_tags=[],
     title="Trabalho 2 - API REST com FastAPI",
-    description="API REST para manipulação do dataset de vendas com operações GET, POST, PATCH e DELETE.",
+    description="API REST para manipulação do dataset de vendas com operações GET, POST, PUT e DELETE.",
     version="1.0.0",
 )
 
