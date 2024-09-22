@@ -1,4 +1,7 @@
+import os
+
 from fastapi import FastAPI
+import uvicorn
 
 from bootstrap import get_container
 from routes import sales_router
@@ -13,3 +16,7 @@ app = FastAPI(
 app.state.ioc_container = get_container()
 
 app.include_router(sales_router)
+
+if __name__ == "__main__":
+    port = int(os.getenv("PORT", 8000))
+    uvicorn.run(app, host="0.0.0.0", port=port)
