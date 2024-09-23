@@ -26,3 +26,6 @@ All endpoints are public available at https://data-processing-dataset-api-1.onre
 
 ## Script 
 This project also contains a script to test the deployed API. You can run it with `python ./resources/script.py`.
+
+Change the `API_URL` variable to test the API locally.
+Change the invoice_id to test the `GET /sales/{invoice_id}`, `PUT /sales/{invoice_id}` and `DELETE /sales/{invoice_id}` endpoints.
